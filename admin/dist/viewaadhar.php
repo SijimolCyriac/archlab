@@ -8,11 +8,10 @@ if(isset($_REQUEST['x']))
 		$res=mysqli_query($con,$sql);
 		$sqli=mysqli_fetch_array($res);
 		?>
-		<p><?php
+		
     $h=$sqli['aadharcard'];
 		$s="../../aadhar/";
 		header("location: $s$h");
-			 ?></p>
-	  <?php
+		
 	}
   ?>
