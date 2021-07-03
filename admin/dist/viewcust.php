@@ -152,8 +152,8 @@ if(!empty($_SESSION['uname']))
                               <form action="Addreg1.php" method="POST">
                             	<table style="background-color:#ccd4e0" class="table table-bordered" id="dataTable" width="100%"  cellspacing="0">
                              <?php
-														$con=mysqli_connect("localhost","root","","constdb") or die("COULDN'T CONNECT");
-
+											
+                         include("DbConne.php");
                             echo "<h2><center>Customer Details</center></h2>";
                             echo "<tr><th>Sl No</th><th>Customer Name</th><th>Address</th><th>Post Office</th><th>PIN Code</th><th>Phone No</th><th>Email Id</th><th>District Name</th><th>State Name</th></tr>";
 
