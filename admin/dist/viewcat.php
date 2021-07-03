@@ -162,7 +162,7 @@ if(!empty($_SESSION['uname']))
                               <form action="#" method="POST">
                             	<table class="table table-bordered" id="dataTable">
                              <?php
-														$con=mysqli_connect("localhost","root","","constdb") or die("COULDN'T CONNECT");
+					include("DbConne.php");									
                             $query = "select * from tbl_labour_category";
                             $results = mysqli_query($con,$query);
                             echo "<tr><th>Sl No</th><th>Category Name</th><th>Action</th><th>Status</th></tr>";
