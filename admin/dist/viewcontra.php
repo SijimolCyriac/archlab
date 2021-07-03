@@ -155,6 +155,7 @@ if(!empty($_SESSION['uname']))
                             	<table style="background-color:#ccd4e0" class="table table-bordered" id="dataTable"
 															width="100%" cellspacing="0">
                                 <?php
+	                       include("DbConne.php");
                                $query = "select * from tbl_contractor_reg";
                                $results = mysqli_query($con,$query);
                              	echo "<h2><center>Contractor Details</center></h2>";
