@@ -187,7 +187,7 @@ if(!empty($_SESSION['uname']))
                               <form action="#" method="POST">
                             	<table class="table table-bordered" id="dataTable" width="50%">
                              <?php
-														$con=mysqli_connect("localhost","root","","constdb") or die("COULDN'T CONNECT");
+					include("DbConne.php");									 
                             $query = "select * from tbl_district";
                             $results = mysqli_query($con,$query);
                             $count=1;
