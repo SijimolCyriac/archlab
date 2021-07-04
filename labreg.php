@@ -113,6 +113,7 @@ include("DbConne.php");
                 title="Contractor" width="90" height="90"></a>
               &nbsp;&nbsp;<a href="labreg.php"><img src="lab.png" data-bs-toggle="tooltip" data-bs-placement="top"
                 title="Labour" width="90" height="90"></a></center></div>
+			      <center><span>Customer</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Contractor</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Labour</span></center></div>
             </div>
             <div class="card-body" style="background:#ccd4e0">
             <form action="Addreg3.php" method="POST" enctype="multipart/form-data">
