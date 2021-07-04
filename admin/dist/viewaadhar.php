@@ -7,9 +7,8 @@ if(isset($_REQUEST['x']))
 		$sql="select aadharcard from tbl_labours_reg  where login_id='$a'";
 		$res=mysqli_query($con,$sql);
 		$sqli=mysqli_fetch_array($res);
-		?>
 		
-    $h=$sqli['aadharcard'];
+                $h=$sqli['aadharcard'];
 		$s="../../aadhar/";
 		header("location: $s$h");
 		
