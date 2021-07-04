@@ -138,7 +138,7 @@ if(!empty($_SESSION['uname']))
 															<div class="card bg-primary text-white mb-4">
 																	<div class="card-body">Total Customers
 																		<?php
-																		$con=mysqli_connect("localhost","root","","constdb") or die("COULDN'T CONNECT");
+																		include("DbConne.php");
 																		$query = "SELECT count(*) from tbl_customer_reg";
 																		$result = mysqli_query($con,$query);
 																		$row = mysqli_fetch_array($result);
@@ -154,7 +154,7 @@ if(!empty($_SESSION['uname']))
 															<div class="card bg-warning text-white mb-4">
 																	<div class="card-body">Total Contractors
 																	<?php
-																	$con=mysqli_connect("localhost","root","","constdb") or die("COULDN'T CONNECT");
+																	include("DbConne.php");
 																	$query = "SELECT count(*) from tbl_contractor_reg";
 																	$result = mysqli_query($con,$query);
 																	$row = mysqli_fetch_array($result);
@@ -170,7 +170,7 @@ if(!empty($_SESSION['uname']))
 															<div class="card bg-success text-white mb-4">
 																	<div class="card-body">Total Labours
 																		<?php
-																		$con=mysqli_connect("localhost","root","","constdb") or die("COULDN'T CONNECT");
+																		include("DbConne.php");
 																		$query = "SELECT count(*) from tbl_labours_reg";
 																		$result = mysqli_query($con,$query);
 																		$row = mysqli_fetch_array($result);
